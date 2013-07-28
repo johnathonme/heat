@@ -13,7 +13,8 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-from quantumclient.common.exceptions import QuantumClientException
+#from quantumclient.common.exceptions import QuantumClientException
+from neutronclient.common.exceptions import NeutronClientException as QuantumClientException
 
 from heat.common import exception
 from heat.engine import resource

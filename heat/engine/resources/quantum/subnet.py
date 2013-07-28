@@ -19,7 +19,8 @@ from heat.engine.resources.quantum import quantum
 from heat.engine import scheduler
 
 if clients.quantumclient is not None:
-    from quantumclient.common.exceptions import QuantumClientException
+    from neutronclient.common.exceptions import NeutronClientException as QuantumClientException
+    #from quantumclient.common.exceptions import QuantumClientException
 
 logger = logging.getLogger(__name__)
 
